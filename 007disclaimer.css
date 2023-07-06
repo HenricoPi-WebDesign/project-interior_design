@@ -1,0 +1,239 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	width: 99%;
+	height: 99vh;
+	background-color: #36404A;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	color:white;
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	background-color: #36404A;
+	background-position: center;
+	background-size: cover;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+}
+
+.navbar{
+	height: 12%;
+	display: flex;
+	align-items: center;
+	padding-bottom: 50px;
+}
+
+.logo{
+	width: 12vh;
+	cursor: pointer;
+	padding-top: 90px;
+}
+
+
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 60px;
+}
+
+
+nav ul li a .btn{
+	width: 25vh;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	border: 2px solid #fff;
+}
+
+nav ul li a .btn:hover{
+	background: #fff;
+	color: #001730;
+	font-weight: bold;
+	transition: 0.5s;
+}
+
+button{
+	width: 180px;
+	color: #000;
+	font-size: 12px;
+	padding: 12px 0;
+	background: #fff;
+	border: 0;
+	border-radius: 12px;
+	outline: none;
+	margin-top: 30px;
+}
+
+.wrapper{
+	margin-right: auto;
+	margin-left: auto;
+
+max-width: 960px;
+
+padding-right: 10px;
+padding-left: 10px;
+
+text-align: center;
+
+}
+
+
+h1{
+	font: caption;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	font-family: sans-serif, serif;
+}
+
+h2{
+	text-align: center;
+}
+p{
+	text-align: center;
+}
+
+
+.item001{
+
+	width: 50px;
+	height: 50px;
+	position: relative;
+	margin-right: 10px;
+
+}
+
+.item002{
+
+	width: 60px;
+	height: 60px;
+	position: relative;
+	margin-right: 20px;
+
+}
+
+.item003{
+
+	width: 70px;
+	height: 70px;
+	position: relative;
+	margin-right: 30px;
+
+}
+
+.item004{
+
+	width: 80px;
+	height: 80px;
+	margin-right: 40px;
+
+}
+
+li{
+	display: inline;
+}
+
+
+footer p a{
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+}
+
+footer p a:hover{
+	color: #fff;
+	text-decoration: underline #fff;
+}
+
+.paragraph1{
+
+	text-align: center;
+	font-size: 25px;
+	font-family: sans-serif, serif;
+}
+
+.column{
+
+	float: left;
+	width:10%;
+	padding: 5px;
+	flex:15%;
+
+}
+
+.row{
+	display: flex;
+	padding-left: 200px;
+	
+
+}
+
+/*
+@media screen and  (max-width: 900px){
+	.container{
+	background-color: #36404A;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	}
+
+	.navbar{
+		width: 80%;
+		display: block;
+		margin: auto;
+		padding-top: 50px;
+	}
+
+	.row{
+		width: 100%;
+		display: block;
+		margin: auto;
+		padding-top: 50px;
+	}
+	.content-section{
+		float: none;
+		width: 100%;
+		display: block;
+		margin: auto;
+	}
+	.image-section{
+		float: none;
+		width: 100%;
+	}
+	.image-section img{
+		width: 100%;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+	.content-section .title{
+		text-align: center;
+		font-size: 19px;
+	}
+	.content-section .content .button{
+		text-align: center;
+	}
+	.content-section .content .button a{
+		padding: 9px 30px;
+	}
+	.content-section .social{
+		text-align: center;
+	}
+}
+/*

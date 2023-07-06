@@ -1,0 +1,217 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Img/001Home.jpg);
+	background-size: cover;
+	background-position: center;
+}
+/*
+banner{
+	width: 100%;
+	height: 100vh;
+	ackground-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Img/001Home.jpg);
+	background-size: cover;
+	background-position: center;
+}
+*/
+
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo{
+	width: 140px;
+	cursor: pointer;
+	border-right: 3px solid #009688;
+	border-bottom: 3px solid #009688;
+}
+
+.navbar ul li{
+	list-style: none;
+	display:inline-block;
+	margin: 18px 20px;
+	position: relative;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	border-top: 3px solid #009688;
+	padding-top: 8px;
+}
+
+.navbar ul li::after{
+	content: '  ';
+	height: 3px;
+	width: 0;
+	background: #009688;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+	width: 100%;
+}
+
+.content{
+	wdth: 100%;
+	heght: 120h;
+	position:fixed;
+	adding-top: 40%;
+	margin-top: 20%;
+	margin-left: 25%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #fff;
+}
+
+.content h1{
+	font-size: 70px;
+	margin-top: 100px;
+	color: #009688;
+	font-family: verdana;
+	font-weight: 100;
+}
+
+.content p{
+	margin: 40px auto;
+	font-weight: 100;
+	line-height: 25px;
+	color: #BFBFBF;
+}
+
+button{
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid #009688;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+span{
+	background: #009688;
+	height: 100%;
+	width: 0%;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+button:hover span{
+	width: 100%;
+}
+
+button:hover{
+	border: none;
+}
+
+
+footer{
+	width: 100%;
+	position:relative;
+	text-align: center;
+	padding-top: 0%;
+}
+
+footer p{
+	color: #fff;
+}
+
+footer p a{
+	text-decoration: none;
+	color: #fff;
+}
+
+footer p a:hover{
+	color: #fff;
+	text-decoration: underline #fff;
+}
+
+
+@media screen and  (max-width: 900px){
+	.container{
+		background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Img/001Homeresize.jpg);
+		width: 100%;
+		height: 100vh;
+		display: block;
+		margin: auto;
+	}
+
+	.content h1{
+		color: transparent;
+		width: 50%;
+	}
+
+	.content p{
+		color: transparent;
+	}
+
+
+	.navbar ul li{
+		opacity: 0;
+	}
+	
+	.content{
+		position: fixed;
+		float: none;
+		width: 100%;
+		display: flex;
+		margin-top: 60%;
+		margin-left: -40%;
+	}
+	
+	footer p{
+		opacity: 0;
+	}
+
+	
+
+	/*
+	.image-section{
+		float: none;
+		width: 100%;
+	}
+	.image-section img{
+		width: 100%;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+	.content-section .title{
+		text-align: center;
+		font-size: 19px;
+	}
+	.content-section .content .button{
+		text-align: center;
+	}
+	.content-section .content .button a{
+		padding: 9px 30px;
+	}
+	.content-section .social{
+		text-align: center;
+	}*/
+}

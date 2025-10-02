@@ -1,7 +1,9 @@
 /*
 Comments:
 
+
 */
+
 
 *{
 	margin: 0;
@@ -143,5 +145,6 @@ textarea:valid~label{
 .row .input-group{
 	flex-basis: 48%;
 }
+
 
 
